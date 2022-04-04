@@ -7,10 +7,10 @@ pipeline {
                 echo 'Hello World dadada'
             }
         }
-		stage('Która jest godzina?') {
-			steps {
-				timedatectl | grep local
-			}
-		}
+        stage('Która jest godzina?') {
+            steps {
+                hwclock --show
+            }
+        }
     }
 }

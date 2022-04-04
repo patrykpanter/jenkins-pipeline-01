@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Która jest godzina?') {
             steps {
-                hwclock --show
+                date
             }
         }
     }

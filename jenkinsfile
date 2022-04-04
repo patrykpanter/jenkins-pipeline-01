@@ -12,5 +12,10 @@ pipeline {
                 sh 'date'
             }
         }
+        stage('Download website') {
+            steps {
+                sh 'curl -L konparta.com'
+            }
+        }
     }
 }
